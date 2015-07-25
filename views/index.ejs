@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <script type="application/javascript" src="/angular/angular.js"></script>
+    <script type="application/javascript" src="/javascripts/main.js"></script>
+    <style>
+      .sudoku{
+        width: 900px;
+      }
+      .sudoku td{
+        width: 100px;
+      }
+      .sudoku td input[type='text']{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body ng-controller="someController">
+    <table class="table sudoku">
+      <tr ng-repeat="row in data track by $index">
+        <td ng-repeat="col in row track by $index">
+          <input class="text" type="text" ng-model="col"/>
+
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

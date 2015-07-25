@@ -1,0 +1,19 @@
+{
+  "name": "Sudoku",
+  "version": "0.0.1",
+  "homepage": "https://github.com/oowangoo/Sudoku",
+  "authors": [
+    "cy <cy@fir.im>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3"
+  }
+}
